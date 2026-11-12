@@ -1,0 +1,639 @@
+html {
+  background-color: #050808;
+  background-image: url("sky.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+}
+
+.main-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+h1 {
+  font-family: "Playfair Display", "ITC Bookman", "Bookman Old Style", serif;
+  font-size: 72px;
+  letter-spacing: 2px;
+  color: #f0e9e1;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px black;
+  border: 2px solid white;
+  padding: 20px 40px;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #050808;
+  text-align: center;
+}
+
+.podstrony {
+  max-width: 1400px;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+
+.podstrony a {
+  font-family: "Playfair Display", "ITC Bookman", "Bookman Old Style", serif;
+  font-size: 48px;
+  background-color: #050808;
+  color: #f0e9e1;
+  text-shadow: 2px 2px 4px black;
+  text-decoration: none;
+  font-weight: bold;
+  aspect-ratio: 2/1;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
+.home {
+  border: 2px solid #bd212c;
+}
+
+.home:hover {
+  background-image: url(spike.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.kontakt {
+  border: 2px solid #62ae43;
+}
+
+.kontakt:hover {
+  background-image: url(jet.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.galeria {
+  border: 2px solid #2f6aac;
+}
+
+.galeria:hover {
+  background-image: url(faye.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.muzyka {
+  border: 2px solid #eabe64;
+}
+
+.muzyka:hover {
+  background-image: url(ed.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.cur {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.swordfish {
+  max-width: 80px;
+  margin-bottom: 10px;
+}
+
+.opis {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 20px 200px;
+}
+
+.okladka {
+  max-width: 300px;
+  max-height: 380px;
+}
+
+.opis-text {
+  color: #f0e9e1;
+  font-family: "Rhodium Libre", serif;
+  font-weight: 500;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+}
+
+h2 {
+  font-family: "Playfair Display", "ITC Bookman", "Bookman Old Style", serif;
+  font-size: 36px;
+  letter-spacing: 2px;
+  color: #f0e9e1;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px black;
+  border: 2px solid white;
+  background-color: #050808;
+  padding: 20px 40px;
+  max-width: 100%;
+}
+
+.wstep {
+  margin-top: 100px;
+}
+
+h3 {
+  font-family: "Playfair Display", "ITC Bookman", "Bookman Old Style", serif;
+  font-size: 28px;
+  color: #f0e9e1;
+  padding-top: 20px;
+}
+
+/* Kontakt */
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 800px;
+  min-width: 500px;
+  margin: 100px auto;
+  padding: 30px;
+  background-color: #050808;
+  border: 2px solid #f0e9e1;
+  box-sizing: border-box;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+form label {
+  color: #f0e9e1;
+  font-family: "Rhodium Libre", serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+form input[type="text"],
+form input[type="email"],
+form select,
+form textarea {
+  background-color: #33181a;
+  color: #f0e9e1;
+  font-family: "Rhodium Libre", serif;
+  font-size: 16px;
+  padding: 12px 15px;
+  border: 1px solid #f0e9e1;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+}
+
+form input[type="text"]:focus,
+form select:focus,
+form textarea:focus {
+  border-color: #f0e9e1;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  color: #696969;
+}
+
+form input[type="submit"] {
+  background-color: #592125;
+  color: #f0e9e1;
+  font-family: "Playfair Display", "ITC Bookman", "Bookman Old Style", serif;
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 12px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+form input[type="submit"]:hover {
+  background-color: #f0e9e1;
+  color: #050808;
+  border: 2px solid #f0e9e1;
+}
+
+.formularz {
+  margin-top: 100px;
+  margin-bottom: 0;
+}
+
+/* Galeria */
+
+.gallery {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gallery-item {
+  margin: 15px;
+  border: 1px solid #ccc;
+  width: 300px;
+  box-sizing: border-box;
+}
+
+.gallery-item:hover {
+  border: 1px solid #777;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery-item div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.opening {
+  margin-top: 100px;
+}
+
+video {
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  margin-bottom: 100px;
+  box-sizing: border-box;
+}
+
+video:hover {
+  border: 1px solid #777;
+}
+
+/* Navbar */
+
+.navbar {
+  background-color: #050808;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  box-sizing: border-box;
+  border-bottom: 2px solid #f0e9e1;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 20px;
+  gap: 40px;
+  margin: 0;
+}
+
+.nav-links a {
+  color: #f0e9e1;
+  font-family: "Rhodium Libre", serif;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: #696969;
+}
+
+/* Footer */
+
+footer {
+  background-color: #050808;
+  border-top: 2px solid #f0e9e1;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 70px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+footer p {
+  color: #f0e9e1;
+  font-family: "Rhodium Libre", serif;
+  font-size: 18px;
+  margin: 0;
+}
+
+/* muzyka */
+
+.music {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 100px;
+  margin-top: 100px;
+}
+
+.pios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.album {
+  max-width: 300px;
+  margin-bottom: 30px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 10px;
+  width: 250px;
+}
+
+.infoBtn {
+  color: #f0e9e1;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-family: "Rhodium Libre", serif;
+  font-size: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.hiddenText {
+  width: 100%;
+  background-color: #33181a;
+  color: #f0e9e1;
+  font-family: "Rhodium Libre", serif;
+  font-size: 13px;
+  padding: 15px;
+  border: 1px solid #592125;
+  border-radius: 4px;
+  box-sizing: border-box;
+  height: 400px;
+}
+
+.hidden {
+  display: none;
+}
+
+.songTitle {
+  text-align: center;
+  padding: 10px 20px;
+  max-width: 300px;
+}
+
+.song1 {
+  border: 1px solid #592125;
+  background-color: #33181a;
+}
+
+.song2 {
+  border: 1px solid #c29742;
+  background-color: #665833;
+}
+
+.song3 {
+  border: 1px solid #2f6aac;
+  background-color: #31455c;
+}
+
+/* responsywność na telefonie */
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 32px;
+    padding: 10px 15px;
+    width: 90%;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 10px auto;
+  }
+  .podstrony {
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    gap: 15px;
+    padding: 20px 0;
+  }
+
+  .podstrony a {
+    width: 85%;
+    max-width: 320px;
+    height: 80px;
+    font-size: 32px;
+  }
+
+  .opis {
+    flex-direction: column;
+    margin: 20px 15px;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .okladka {
+    max-width: 75%;
+    height: auto;
+  }
+
+  .opis-text {
+    font-size: 16px;
+    align-items: center;
+    padding: 0 10px;
+  }
+
+  .wstep {
+    margin-top: 40px;
+    text-align: center;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+
+  h2 {
+    font-size: 24px;
+    padding: 10px 20px;
+    text-align: center;
+    max-width: 90%;
+    box-sizing: border-box;
+  }
+
+  h3 {
+    font-size: 22px;
+    text-align: center;
+    padding: 0 15px;
+  }
+
+  form {
+    min-width: 0;
+    width: 90%;
+    margin: 40px auto;
+    padding: 20px 15px;
+  }
+
+  form label {
+    font-size: 16px;
+  }
+
+  form input[type="text"],
+  form input[type="email"],
+  form select,
+  form textarea {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  form input[type="submit"] {
+    font-size: 16px;
+    padding: 10px 15px;
+  }
+
+  .formularz {
+    margin-top: 40px;
+  }
+
+  .gallery {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+
+  .gallery-item {
+    width: 90%;
+    max-width: 300px;
+    margin: 10px auto;
+  }
+
+  .opening {
+    margin-top: 40px;
+  }
+
+  video {
+    width: 90%;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+  }
+
+  .nav-links {
+    gap: 15px;
+    padding: 15px 10px;
+  }
+
+  .nav-links a {
+    font-size: 16px;
+  }
+
+  footer {
+    padding: 20px 10px;
+    margin-top: 40px;
+  }
+
+  footer p {
+    font-size: 16px;
+  }
+
+  .music {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-top: 40px;
+  }
+
+  .pios {
+    width: 100%;
+  }
+
+  .album {
+    max-width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .buttons {
+    width: 90%;
+    max-width: 300px;
+    margin-top: 20px;
+  }
+
+  .infoBtn {
+    font-size: 18px;
+    padding: 10px 15px;
+  }
+
+  .hiddenText {
+    height: auto;
+    font-size: 12px;
+    padding: 12px;
+  }
+}
+
+/* responsywność na tablecie */
+
+@media (min-width: 800px) and (max-width: 1200px) {
+  h1 {
+    font-size: 48px;
+    padding: 15px 30px;
+  }
+
+  .podstrony {
+    max-width: 900px;
+  }
+
+  .podstrony a {
+    width: 200px;
+    font-size: 36px;
+  }
+
+  .opis {
+    margin: 20px 50px;
+  }
+
+  .music {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .pios {
+    width: 45%;
+  }
+
+  form {
+    max-width: 600px;
+    min-width: 450px;
+  }
+}
